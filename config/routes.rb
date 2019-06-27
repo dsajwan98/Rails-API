@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
-	post '/login', to:'home#login'
+	resources:users
+	post '/auth/login', to: 'authentication#login'
 
 end
