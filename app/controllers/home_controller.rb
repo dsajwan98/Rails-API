@@ -7,7 +7,7 @@ class HomeController<ApplicationController
         @email_db="example@example.com"
         @password_db="abc123" 
 
-         if (@email==@email_db) && (@password==@password_db)
+        if (@email==@email_db) && (@password==@password_db)
             render json: {'email':@email ,'password':@password}
         else
             render json: params
